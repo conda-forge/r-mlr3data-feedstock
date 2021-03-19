@@ -1,4 +1,4 @@
-{% set version = '0.3.0' %}
+{% set version = "0.3.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3data_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3data/mlr3data_{{ version }}.tar.gz
-  sha256: c62c00763bb5f8da2334e22b229b070b098b4e82f035e045dd6f51181480c264
+  sha256: 7928c9ad2703244a0d078fbe7c62fcfef491696828c845055377c736d36e3281
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -37,15 +37,11 @@ test:
 about:
   home: https://github.com/mlr-org/mlr3data
   license: LGPL-3.0-only
-  summary: A small collection of interesting and educational machine learning data sets which
-    are used as examples in the 'mlr3' book (<https://mlr3book.mlr-org.com>), the use
-    case gallery (<https://mlr3gallery.mlr-org.com>), or in other examples. All data
-    sets are properly preprocessed and ready to be analyzed by most machine learning
-    algorithms.  Data sets are automatically added to the dictionary of tasks if 'mlr3'
-    is loaded.
+  summary: A small collection of interesting and educational machine learning data sets which are used as examples in the 'mlr3' book (<https://mlr3book.mlr-org.com>), the use case gallery (<https://mlr3gallery.mlr-org.com>), or in other examples. All data sets are properly preprocessed and ready to be analyzed by most machine
+    learning algorithms.  Data sets are automatically added to the dictionary of tasks if 'mlr3' is loaded.
   license_family: LGPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
 
 extra:
   recipe-maintainers:
