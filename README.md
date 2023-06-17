@@ -1,11 +1,11 @@
-About r-mlr3data
-================
+About r-mlr3data-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlr3data-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/mlr-org/mlr3data
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mlr3data-feedstock/blob/main/LICENSE.txt)
 
 Summary: A small collection of interesting and educational machine learning data sets which are used as examples in the 'mlr3' book (<https://mlr3book.mlr-org.com>), the use case gallery (<https://mlr3gallery.mlr-org.com>), or in other examples. All data sets are properly preprocessed and ready to be analyzed by most machine learning algorithms.  Data sets are automatically added to the dictionary of tasks if 'mlr3' is loaded.
 
