@@ -1,4 +1,4 @@
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mlr3data_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mlr3data/mlr3data_{{ version }}.tar.gz
-  sha256: 5abe021f3da4ea9fcb04756fd2b145fede241791af76109083b0947385c0ab52
+  sha256: 6acbc9785bf7b823853c055128555b2df542a1da80d76df39afd211fb4780b16
 
 build:
   number: 0
